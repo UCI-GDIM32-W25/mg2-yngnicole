@@ -7,6 +7,8 @@ public class PenguinPlayer : MonoBehaviour
     [SerializeField] private float _speed = 1.0f;
     [SerializeField] private Transform _playerTransform;
     [SerializeField] private CoinCountUI _coinCountUI;
+    [SerializeField] private Rigidbody _playerRigidbody;
+    [SerializeField] private Collider _playerCollider;
 
     private int _coinsCollected;
 
@@ -22,6 +24,7 @@ public class PenguinPlayer : MonoBehaviour
         // The Space button makes the player jump.Jumping is not possible if the player is not grounded.
         // Gain a point, which updates in the UI.
         // Destroy the coin.
+        // collider 
 
     }
 }
