@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    [SerializeField]
-    // collider
-    // transform
+    [SerializeField] Transform _coinTransform;
+    [SerializeField] Collider _coinCollider;
 
     // Start is called before the first frame update
     void Start()
