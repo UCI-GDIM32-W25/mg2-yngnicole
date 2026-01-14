@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    [SerializeField]
+    // collider
+    // transform
+
     // Start is called before the first frame update
     void Start()
     {
