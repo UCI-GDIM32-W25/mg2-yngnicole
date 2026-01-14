@@ -19,6 +19,9 @@ public class PenguinPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // The Space button makes the player jump.Jumping is not possible if the player is not grounded.
+        // Gain a point, which updates in the UI.
+        // Destroy the coin.
+
     }
 }

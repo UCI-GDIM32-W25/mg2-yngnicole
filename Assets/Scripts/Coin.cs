@@ -13,6 +13,8 @@ public class Coin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // if goes off screen, gets destroyed
+        // coin is moving left 
+        // instatiated randomly on screen in a line. 
     }
 }
