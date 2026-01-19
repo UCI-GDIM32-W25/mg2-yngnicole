@@ -31,12 +31,17 @@ public class PenguinPlayer : MonoBehaviour
         } 
 
 
-
-
             //When the player hits the coin, 
             // Gain a point, which updates in the UI.
             // Destroy the coin.
             // collider 
 
         }
+    void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            _isGrounded = true;
+        }
+    }
 }
