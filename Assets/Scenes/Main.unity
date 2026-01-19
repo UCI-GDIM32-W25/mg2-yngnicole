@@ -127,6 +127,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6010308294304668094, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
   m_PrefabInstance: {fileID: 6034491710426658284}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &279359988 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2096174569135335345, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
+  m_PrefabInstance: {fileID: 6034491710426658284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!70 &279359989
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -162,6 +167,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.625, y: 0.6875}
   m_Direction: 0
+--- !u!114 &279359990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279359986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc5fc410f90a8439f07a4e47d3495c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coinTransform: {fileID: 279359988}
+  _coinCollider: {fileID: 279359989}
 --- !u!1 &482234299
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +466,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6010308294304668094, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 279359989}
+    - targetCorrespondingSourceObject: {fileID: 6010308294304668094, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 279359990}
   m_SourcePrefab: {fileID: 100100000, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
 --- !u!1001 &8963536827278654998
 PrefabInstance:

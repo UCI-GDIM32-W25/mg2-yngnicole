@@ -5,12 +5,12 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     [SerializeField] Transform _coinTransform;
-    [SerializeField] Collider _coinCollider;
+    [SerializeField] Collider2D _coinCollider;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -21,8 +21,4 @@ public class Coin : MonoBehaviour
         // if coin goes off screen, gets destroyed
     }
 
-    public void UpdateCoin(int coinCollected)
-    {
-
-    }
 }
