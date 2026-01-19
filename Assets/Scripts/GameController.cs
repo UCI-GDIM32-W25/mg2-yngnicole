@@ -11,7 +11,7 @@ public class Ui : MonoBehaviour
     [SerializeField] private TMP_Text _coinPoints;
     [SerializeField] private GameObject _coinPrefab;
 
-    [SerializeField] float _spawnY = 2f;
+    //[SerializeField] float _spawnY = 2f;
     [SerializeField] float _minSpawnTime = 0.5f;
     [SerializeField] float _maxSpawnTime = 2f;
 
@@ -19,6 +19,7 @@ public class Ui : MonoBehaviour
 
     void Start()
     {
+        SpawnCoin();
         ResetSpawnTimer();
     }
 
@@ -39,10 +40,10 @@ public class Ui : MonoBehaviour
 
     public void SpawnCoin()
     {
-        // instantiate coin randomly on screen in a line with not-perfectly-regular intervals (this could be random or in a pattern). 
+        // instantiate coin randomly on screen in a line with not-perfectly-regular intervals (this could be random or in a pattern) infinitely.
 
-        float randomX = Random.Range(-10f, 10f);
-        Vector3 spawnPosition = new Vector3(randomX, _spawnY, 0f);
+        //float randomX = Random.Range(-10f, 10f);
+        Vector3 spawnPosition = new Vector3(14.1f, 13.47f, 0f);
 
         Instantiate(_coinPrefab, spawnPosition, UnityEngine.Quaternion.identity); 
     }
