@@ -8,7 +8,7 @@ public class PenguinPlayer : MonoBehaviour
     [SerializeField] private Transform _playerTransform;
     [SerializeField] private Rigidbody _playerRigidbody;
     [SerializeField] private Collider _playerCollider;
-    [SerializeField] private CoinCountUI _coinCountUI;
+    //[SerializeField] private CoinCountUI _coinCountUI;
 
     private int _coinsCollected;
 
