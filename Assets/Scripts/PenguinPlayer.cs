@@ -39,7 +39,7 @@ public class PenguinPlayer : MonoBehaviour
             _coinsCollected++;
             Destroy(collision.gameObject);
 
-            _coinCountUI.UpdateCoin(_coinsCollected);
+            // _coinCountUI.UpdateCoin(_coinsCollected);
         }
     }
     
