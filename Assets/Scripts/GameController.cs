@@ -24,4 +24,8 @@ public class Ui : MonoBehaviour
         // number of points
         // coin prefab
     }
+    public void UpdateCoin(int coinCollected)
+    {
+
+    }
 }
