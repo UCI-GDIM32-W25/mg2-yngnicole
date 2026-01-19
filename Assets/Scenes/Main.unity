@@ -551,10 +551,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a157e35454044741bbc09f860729cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1
   _playerTransform: {fileID: 8963536827278655005}
-  _playerRigidbody: {fileID: 0}
-  _playerCollider: {fileID: 0}
+  _playerRigidbody: {fileID: 8963536827278655003}
+  _playerCollider: {fileID: 8963536827278655000}
   _jump: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
