@@ -9,18 +9,20 @@ public class Coin : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _destroyCoin = -12f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+  
 
     // Update is called once per frame
     void Update()
     {
         // instantiate coin randomly on screen in a line with not-perfectly-regular intervals (this could be random or in a pattern). random.range
+
         // coin is moving left 
+        transform.Translate(Vector2.left * _moveSpeed * Time.deltaTime);
         // if coin goes off screen, gets destroyed
+        if (transform.position.x < _destroyCoin)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }
