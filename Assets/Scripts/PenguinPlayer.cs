@@ -25,7 +25,7 @@ public class PenguinPlayer : MonoBehaviour
         // The Space button makes the player jump.Jumping is not possible if the player is not grounded.
         if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
         {
-            _playerRigidbody.AddForce(Vector3.up * _jump, ForceMode.Impulse);
+            _playerRigidbody.AddForce(Vector3.up * _jump, ForceMode2D.Impulse);
             _isGrounded = false;
         } 
 
