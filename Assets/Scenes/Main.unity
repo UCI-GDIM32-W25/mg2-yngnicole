@@ -122,6 +122,46 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &279359986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6010308294304668094, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
+  m_PrefabInstance: {fileID: 6034491710426658284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &279359989
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279359986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.625, y: 0.6875}
+  m_Direction: 0
 --- !u!1 &482234299
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,10 +436,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: 01CoinGold_5
       objectReference: {fileID: 0}
+    - target: {fileID: 6010308294304668094, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6010308294304668094, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 279359989}
   m_SourcePrefab: {fileID: 100100000, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
 --- !u!1001 &8963536827278654998
 PrefabInstance:
@@ -534,11 +581,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!4 &8963536827278655005 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3012198456142615144, guid: ee85c2ce777197b4995b05034e956b0c, type: 3}
-  m_PrefabInstance: {fileID: 8963536827278654998}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8963536827278655006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,7 +593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a157e35454044741bbc09f860729cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerTransform: {fileID: 8963536827278655005}
   _playerRigidbody: {fileID: 8963536827278655003}
   _playerCollider: {fileID: 8963536827278655000}
   _jump: 5

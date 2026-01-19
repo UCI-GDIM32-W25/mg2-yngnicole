@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 
 public class PenguinPlayer : MonoBehaviour
@@ -25,18 +26,21 @@ public class PenguinPlayer : MonoBehaviour
         // The Space button makes the player jump.Jumping is not possible if the player is not grounded.
         if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
         {
-            _playerRigidbody.AddForce(Vector3.up * _jump, ForceMode2D.Impulse);
+            _playerRigidbody.AddForce(Vector2.up * _jump, ForceMode2D.Impulse);
             _isGrounded = false;
         }
+    }
 
-        //When the player hits the coin, 
-
-        // Gain a point 
-        _coinsCollected++;
-        // Destroy the coin.
-        // collider 
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //When the player hits the coin, Gain a point, Destroy the coin.
+        if (collision.CompareTag("Coin"))
+        { 
+            _coinsCollected++;
+            Destroy(collision.gameObject);
         }
+    }
+    
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
