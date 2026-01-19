@@ -14,7 +14,6 @@ public class Coin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // instantiate coin randomly on screen in a line with not-perfectly-regular intervals (this could be random or in a pattern). random.range
 
         // coin is moving left 
         transform.Translate(Vector2.left * _moveSpeed * Time.deltaTime);
