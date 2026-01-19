@@ -12,27 +12,41 @@ public class Ui : MonoBehaviour
     [SerializeField] private GameObject _coinPrefab;
 
     [SerializeField] float _spawnY = 2f;
-    
-    // Start is called before the first frame update
+    [SerializeField] float _minSpawnTime = 0.5f;
+    [SerializeField] float _maxSpawnTime = 2f;
+
+    private float _spawnTimer;
+
     void Start()
     {
-        
+        ResetSpawnTimer();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-       
+       _spawnTimer -= Time.deltaTime;
+        if (_spawnTimer <= 0f)
+        {
+            SpawnCoin();
+            ResetSpawnTimer();
+        }
     }
+
+    void ResetSpawnTimer()
+    {
+        _spawnTimer = Random.Range(_minSpawnTime, _maxSpawnTime);
+    }
+
     public void SpawnCoin()
     {
         // instantiate coin randomly on screen in a line with not-perfectly-regular intervals (this could be random or in a pattern). 
 
-        float _randomX = Random.Range(-10f, 10f);
-        Vector3 spawnPosition = new Vector3(_randomX, _spawnY, 0f);
+        float randomX = Random.Range(-10f, 10f);
+        Vector3 spawnPosition = new Vector3(randomX, _spawnY, 0f);
 
         Instantiate(_coinPrefab, spawnPosition, UnityEngine.Quaternion.identity); 
     }
+
     public void UpdateCoinText(int coinCollected)
     {
         // When the player hits the coin, they Gain a point, which updates text in the UI. 

@@ -523,11 +523,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2096174569135335345, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.53
+      value: 14.1
       objectReference: {fileID: 0}
     - target: {fileID: 2096174569135335345, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.81
+      value: 13.47
       objectReference: {fileID: 0}
     - target: {fileID: 2096174569135335345, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -564,6 +564,10 @@ PrefabInstance:
     - target: {fileID: 6010308294304668094, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
       propertyPath: m_Name
       value: 01CoinGold_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815167709883354857, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
+      propertyPath: _destroyCoin
+      value: -8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
