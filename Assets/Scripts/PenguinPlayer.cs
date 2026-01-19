@@ -8,9 +8,11 @@ public class PenguinPlayer : MonoBehaviour
     [SerializeField] private Transform _playerTransform;
     [SerializeField] private Rigidbody _playerRigidbody;
     [SerializeField] private Collider _playerCollider;
+    [SerializeField] private float _jump;
     //[SerializeField] private CoinCountUI _coinCountUI;
 
     private int _coinsCollected;
+    private bool _isGrounded;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +24,19 @@ public class PenguinPlayer : MonoBehaviour
     void Update()
     {
         // The Space button makes the player jump.Jumping is not possible if the player is not grounded.
-        // Gain a point, which updates in the UI.
-        // Destroy the coin.
-        // collider 
+        if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
+        {
+            _playerRigidbody.AddForce(Vector3.up * _jump, ForceMode.Impulse);
+            _isGrounded = false;
+        } 
 
-    }
+
+
+
+            //When the player hits the coin, 
+            // Gain a point, which updates in the UI.
+            // Destroy the coin.
+            // collider 
+
+        }
 }
