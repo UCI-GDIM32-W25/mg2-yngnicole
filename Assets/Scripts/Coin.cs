@@ -18,6 +18,11 @@ public class Coin : MonoBehaviour
     {
         // if goes off screen, gets destroyed
         // coin is moving left 
-        // instatiated randomly on screen in a line. 
+        // instatiated randomly on screen in a line.   not-perfectly-regular intervals (this could be random or in a pattern). random.range
+    }
+
+    public void UpdateCoin(int coinCollected)
+    {
+
     }
 }
