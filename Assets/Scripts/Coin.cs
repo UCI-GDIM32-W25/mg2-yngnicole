@@ -6,6 +6,8 @@ public class Coin : MonoBehaviour
 {
     [SerializeField] Transform _coinTransform;
     [SerializeField] Collider2D _coinCollider;
+    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _destroyCoin = -12f;
 
     // Start is called before the first frame update
     void Start()
