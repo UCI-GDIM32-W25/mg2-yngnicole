@@ -181,6 +181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coinTransform: {fileID: 279359988}
   _coinCollider: {fileID: 279359989}
+  _moveSpeed: 3
+  _destroyCoin: -12
 --- !u!1 &482234299
 GameObject:
   m_ObjectHideFlags: 0
