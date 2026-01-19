@@ -9,7 +9,7 @@ public class PenguinPlayer : MonoBehaviour
     [SerializeField] private Rigidbody2D _playerRigidbody;
     [SerializeField] private Collider2D _playerCollider;
     [SerializeField] private float _jump;
-    [SerializeField] private Coin _coinCountUI;
+    [SerializeField] private Ui _coinCountUI;
 
     private int _coinsCollected;
     private bool _isGrounded;
@@ -39,7 +39,7 @@ public class PenguinPlayer : MonoBehaviour
             _coinsCollected++;
             Destroy(collision.gameObject);
 
-            // _coinCountUI.UpdateCoin(_coinsCollected);
+            _coinCountUI.UpdateCoinText(_coinsCollected);
         }
     }
     

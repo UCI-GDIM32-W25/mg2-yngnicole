@@ -238,9 +238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coinPoints: {fileID: 0}
   _coinPrefab: {fileID: 279359986}
-  _spawnY: 2
   _minSpawnTime: 0.5
-  _maxSpawnTime: 2
+  _maxSpawnTime: 20
 --- !u!1 &279359986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6010308294304668094, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
