@@ -554,7 +554,7 @@ MonoBehaviour:
   _playerTransform: {fileID: 8963536827278655005}
   _playerRigidbody: {fileID: 8963536827278655003}
   _playerCollider: {fileID: 8963536827278655000}
-  _jump: 1
+  _jump: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

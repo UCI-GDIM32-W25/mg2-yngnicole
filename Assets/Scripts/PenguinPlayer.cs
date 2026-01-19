@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PenguinPlayer : MonoBehaviour
 {
-    [SerializeField] private Transform _playerTransform;
+    // [SerializeField] private Transform _playerTransform;
     [SerializeField] private Rigidbody2D _playerRigidbody;
     [SerializeField] private Collider2D _playerCollider;
     [SerializeField] private float _jump;
@@ -16,7 +16,7 @@ public class PenguinPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _coinsCollected = 0;
     }
 
     // Update is called once per frame
@@ -27,13 +27,14 @@ public class PenguinPlayer : MonoBehaviour
         {
             _playerRigidbody.AddForce(Vector3.up * _jump, ForceMode2D.Impulse);
             _isGrounded = false;
-        } 
+        }
 
+        //When the player hits the coin, 
 
-            //When the player hits the coin, 
-            // Gain a point, which updates in the UI.
-            // Destroy the coin.
-            // collider 
+        // Gain a point 
+        _coinsCollected++;
+        // Destroy the coin.
+        // collider 
 
         }
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
