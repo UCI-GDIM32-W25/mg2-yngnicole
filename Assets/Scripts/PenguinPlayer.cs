@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PenguinPlayer : MonoBehaviour
 {
-    [SerializeField] private float _speed = 1.0f;
     [SerializeField] private Transform _playerTransform;
     [SerializeField] private Rigidbody2D _playerRigidbody;
     [SerializeField] private Collider2D _playerCollider;
