@@ -10,7 +10,7 @@ public class Coin : MonoBehaviour
     [SerializeField] private float _destroyCoin = -12f;
 
     private bool _isDestroyed;
-  
+
 
     // Update is called once per frame
     void Update()
@@ -27,20 +27,6 @@ public class Coin : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        
-    }
 
-    /*private void OnBecameInvisible()
-    {
-        DestroyCoin();
     }
-
-    public void DestroyCoin()
-    {
-        if (_isDestroyed) return;
-
-        _isDestroyed = true;
-        Destroy(gameObject);
-    }
-    */
 }
