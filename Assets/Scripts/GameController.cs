@@ -10,8 +10,6 @@ public class Ui : MonoBehaviour
 {
     [SerializeField] private TMP_Text _coinPoints;
     [SerializeField] private GameObject _coinPrefab;
-
-    //[SerializeField] float _spawnY = 2f;
     [SerializeField] float _minSpawnTime = 0.5f;
     [SerializeField] float _maxSpawnTime = 2f;
 

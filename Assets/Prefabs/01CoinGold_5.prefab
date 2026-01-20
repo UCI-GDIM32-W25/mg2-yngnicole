@@ -135,5 +135,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coinTransform: {fileID: 2096174569135335345}
   _coinCollider: {fileID: 2189106486931354806}
-  _moveSpeed: 3
+  _moveSpeed: 2
   _destroyCoin: -5

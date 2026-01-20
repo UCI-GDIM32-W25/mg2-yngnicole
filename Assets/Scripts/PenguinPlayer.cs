@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PenguinPlayer : MonoBehaviour
 {
-    // [SerializeField] private Transform _playerTransform;
     [SerializeField] private Rigidbody2D _playerRigidbody;
     [SerializeField] private Collider2D _playerCollider;
     [SerializeField] private float _jump;
