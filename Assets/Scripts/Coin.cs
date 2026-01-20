@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour
     [SerializeField] Transform _coinTransform;
     [SerializeField] Collider2D _coinCollider;
     [SerializeField] private float _moveSpeed;
-   //[SerializeField] private float _destroyCoin = -12f;
+    [SerializeField] private float _destroyCoin = -12f;
 
     private bool _isDestroyed;
   
@@ -22,15 +22,15 @@ public class Coin : MonoBehaviour
         transform.Translate(Vector2.left * _moveSpeed * Time.deltaTime);
 
         // if coin goes off screen, gets destroyed
-        //if (transform.position.x < _destroyCoin)
-        /*{
+        if (transform.position.x < _destroyCoin)
+        {
             Destroy(gameObject);
             return;
         }
-        */
+        
     }
 
-    private void OnBecameInvisible()
+    /*private void OnBecameInvisible()
     {
         DestroyCoin();
     }
@@ -42,4 +42,5 @@ public class Coin : MonoBehaviour
         _isDestroyed = true;
         Destroy(gameObject);
     }
+    */
 }
