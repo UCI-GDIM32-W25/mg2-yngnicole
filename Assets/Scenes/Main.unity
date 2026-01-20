@@ -239,8 +239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coinPoints: {fileID: 882650379}
   _coinPrefab: {fileID: 6010308294304668094, guid: 2e8332a7e1ab6fd4681ba67d910bfae4, type: 3}
-  _minSpawnTime: 0.1
-  _maxSpawnTime: 1
+  _minSpawnTime: 0.5
+  _maxSpawnTime: 2
 --- !u!1 &482234299
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,8 +528,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
