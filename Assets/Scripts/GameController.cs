@@ -19,11 +19,10 @@ public class Ui : MonoBehaviour
 
     void Start()
     {
-        SpawnCoin();
         ResetSpawnTimer();
     }
 
-    private void Update()
+     private void Update()
     {
        _spawnTimer -= Time.deltaTime;
         if (_spawnTimer <= 0f)
@@ -32,17 +31,15 @@ public class Ui : MonoBehaviour
             ResetSpawnTimer();
         }
     }
-
+    
     void ResetSpawnTimer()
     {
         _spawnTimer = Random.Range(_minSpawnTime, _maxSpawnTime);
     }
-
+    
     public void SpawnCoin()
     {
-        // instantiate coin randomly on screen in a line with not-perfectly-regular intervals (this could be random or in a pattern) infinitely.
-
-        //float randomX = Random.Range(-10f, 10f);
+        // instantiate coin randomly on screen with not-perfectly-regular intervals infinitely.
         Vector3 spawnPosition = new Vector3(14.1f, 13.47f, 0f);
 
         Instantiate(_coinPrefab, spawnPosition, UnityEngine.Quaternion.identity); 
