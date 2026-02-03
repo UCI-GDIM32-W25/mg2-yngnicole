@@ -6,7 +6,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Ui : MonoBehaviour
+public class GameController : MonoBehaviour
 {
     [SerializeField] private TMP_Text _coinPoints;
     [SerializeField] private GameObject _coinPrefab;
