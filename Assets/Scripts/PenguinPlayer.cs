@@ -8,7 +8,7 @@ public class PenguinPlayer : MonoBehaviour
     [SerializeField] private Rigidbody2D _playerRigidbody;
     [SerializeField] private Collider2D _playerCollider;
     [SerializeField] private float _jump;
-    [SerializeField] private Ui _coinCountUI;
+    [SerializeField] private GameController _coinCountUI;
 
     private int _coinsCollected;
     private bool _isGrounded;
